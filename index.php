@@ -17,5 +17,6 @@ and open the template in the editor.
         <?php
             include 'views/topmenu.html';
         ?>
+        <p>Hola</p>
     </body>
 </html>
