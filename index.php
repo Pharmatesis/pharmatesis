@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+<?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+?>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -17,6 +16,17 @@ and open the template in the editor.
         <?php
             include 'views/topmenu.html';
         ?>
-        <p>Hola</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2>Pharmatesis</h2>
+                    <?php
+                    require 'controller/MainController.php';
+                    $control = new MainController();
+                    $control->processRequest();
+                    ?>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
