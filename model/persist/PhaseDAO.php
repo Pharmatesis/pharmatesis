@@ -2,65 +2,65 @@
 
 /** 
  * Class that will connect the object with the DB
- * @name ProfessionDAO.php
+ * @name PhaseDAO.php
  * @author Joan Fernández
  * @date 2017-02-23
  * @version 1.0
 */
-class ProfessionDAO {
+class PhaseDAO {
     
     /** 
     * Inserts the object into the DB
-    * @name insertProfession()
+    * @name insertPhase()
     * @author Joan Fernández
     * @date 2017-02-23
     * @version 1.0
-    * @param $profession Object to insert
+    * @param $phase Object to insert
     * @return $rowsAffected Number of rows affected
     */
-    public static function insertProfession($profession) {
+    public static function insertPhase($phase) {
         return 0;
     }
     
     /** 
     * Erases the object from the DB
-    * @name deleteProfession()
+    * @name deletePhase()
     * @author Joan Fernández
     * @date 2017-02-23
     * @version 1.0
-    * @param $profession Object to delete
+    * @param $phase Object to delete
     * @return $rowsAffected Number of rows affected
     */
-    public static function deleteProfession($profession) {
+    public static function deletePhase($phase) {
         return 0;
     }
     
     /** 
     * Modifies the object into the DB
-    * @name modifyProfession()
+    * @name modifyPhase()
     * @author Joan Fernández
     * @date 2017-02-23
     * @version 1.0
-    * @param $profession Object to modify
+    * @param $phase Object to modify
     * @return $rowsAffected Number of rows affected
     */
-    public static function modifyProfession($profession) {
+    public static function modifyPhase($phase) {
         return 0;
     }
     
     /** 
     * Finds an object into the DB
-    * @name findProfession()
+    * @name findPhase()
     * @author Joan Fernández
     * @date 2017-02-23
     * @version 1.0
-    * @param $profession Object to find
-    * @return $foundProfession Founded object
+    * @param $phase Object to find
+    * @return $foundPhase Founded object
     */
-    public static function findProfession($profession) {
-        $foundProfession = null;
+    public static function findPhase($phase) {
+        $foundPhase = null;
         
-        return $foundProfession;
+        return $foundPhase;
     }
     
     /** 
@@ -69,7 +69,7 @@ class ProfessionDAO {
     * @author Joan Fernández
     * @date 2017-02-23
     * @version 1.0
-    * @param $whereClause Clause to fins
+    * @param $whereClause Clause to find
     * @return array Founded objects
     */
     public function findWhere($whereClause) {

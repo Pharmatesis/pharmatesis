@@ -1,18 +1,17 @@
 <?php
 
 /** 
- * Class to manage the Profession objects
- * @name Profession.php
+ * Class to manage the Subject objects
+ * @name Country.php
  * @author Joan Fernández
  * @date 2017-02-23
  * @version 1.0
- * @param id: ID of the profession
-        * id: Profession's id
-        * name: Profession's name
+ * @param id: Country's ID
+        * name: Country's name
 */
-class Profession {
+class Country {
     
-    //Atributtes
+    //Attributes
     private $id;
     private $name;
     
@@ -22,7 +21,6 @@ class Profession {
         $this->name = $name;
     }
     
-    //Getters & Setters
     function getId() {
         return $this->id;
     }
@@ -41,6 +39,8 @@ class Profession {
     
     //Own methods
     public function __toString() {
-        return sprintf("ID=%s, Name=%s", $this->id,$this->name);
+        return sprintf("ID=%s, Name=%s",
+                $this->id,$this->name);
     }
+
 }

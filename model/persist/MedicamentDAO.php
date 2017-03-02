@@ -2,65 +2,64 @@
 
 /** 
  * Class that will connect the object with the DB
- * @name ProfessionDAO.php
+ * @name MedicamentDAO.php
  * @author Joan Fernández
  * @date 2017-02-23
  * @version 1.0
 */
-class ProfessionDAO {
+class MedicamentDAO {
     
     /** 
     * Inserts the object into the DB
-    * @name insertProfession()
+    * @name insertMedicament()
     * @author Joan Fernández
     * @date 2017-02-23
     * @version 1.0
-    * @param $profession Object to insert
+    * @param $medicament Object to insert
     * @return $rowsAffected Number of rows affected
     */
-    public static function insertProfession($profession) {
+    public static function insertMedicament($medicament) {
         return 0;
     }
     
     /** 
     * Erases the object from the DB
-    * @name deleteProfession()
+    * @name deleteMedicament()
     * @author Joan Fernández
     * @date 2017-02-23
     * @version 1.0
-    * @param $profession Object to delete
+    * @param $medicament Object to delete
     * @return $rowsAffected Number of rows affected
     */
-    public static function deleteProfession($profession) {
+    public static function deleteMedicament($medicament) {
         return 0;
     }
     
     /** 
     * Modifies the object into the DB
-    * @name modifyProfession()
+    * @name modifyMedicament()
     * @author Joan Fernández
     * @date 2017-02-23
     * @version 1.0
-    * @param $profession Object to modify
+    * @param $medicament Object to modify
     * @return $rowsAffected Number of rows affected
     */
-    public static function modifyProfession($profession) {
+    public static function modifyMedicament($medicament) {
         return 0;
     }
     
     /** 
     * Finds an object into the DB
-    * @name findProfession()
+    * @name findMedicament()
     * @author Joan Fernández
     * @date 2017-02-23
     * @version 1.0
-    * @param $profession Object to find
-    * @return $foundProfession Founded object
+    * @param $medicament Object to find
+    * @return $foundMedicament Founded object
     */
-    public static function findProfession($profession) {
-        $foundProfession = null;
-        
-        return $foundProfession;
+    public static function findMedicament($medicament) {
+        $foundMedicament = null;        
+        return $foundMedicament;
     }
     
     /** 
@@ -69,7 +68,7 @@ class ProfessionDAO {
     * @author Joan Fernández
     * @date 2017-02-23
     * @version 1.0
-    * @param $whereClause Clause to fins
+    * @param $whereClause Clause to find
     * @return array Founded objects
     */
     public function findWhere($whereClause) {

@@ -15,11 +15,11 @@ class UserDAO {
     * @author Joan Fernández
     * @date 2017-02-23
     * @version 1.0
-    * @param none
+    * @param $user Object to insert
     * @return $rowsAffected Number of rows affected
     */
-    public static function insertUser() {
-        
+    public static function insertUser($user) {
+        return 0;
     }
     
     /** 
@@ -28,11 +28,11 @@ class UserDAO {
     * @author Joan Fernández
     * @date 2017-02-23
     * @version 1.0
-    * @param none
+    * @param $user Object to delete
     * @return $rowsAffected Number of rows affected
     */
-    public static function deleteUser() {
-        
+    public static function deleteUser($user) {
+        return 0;
     }
     
     /** 
@@ -41,11 +41,11 @@ class UserDAO {
     * @author Joan Fernández
     * @date 2017-02-23
     * @version 1.0
-    * @param none
+    * @param $user Object to modify
     * @return $rowsAffected Number of rows affected
     */
-    public static function modifyUser() {
-        
+    public static function modifyUser($user) {
+        return 0;
     }
     
     /** 
@@ -54,10 +54,24 @@ class UserDAO {
     * @author Joan Fernández
     * @date 2017-02-23
     * @version 1.0
-    * @param none
-    * @return $rowsAffected Number of rows affected
+    * @param $user Object to find
+    * @return $foundUser Founded object
     */
-    public static function findUser() {
-        
+    public static function findUser($user) {        
+        $foundUser = null;
+        return $foundUser;
+    }
+    
+    /** 
+    * Find an object using a clause
+    * @name findWhere()
+    * @author Joan Fernández
+    * @date 2017-02-23
+    * @version 1.0
+    * @param $whereClause Clause to fins
+    * @return array Founded objects
+    */
+    public function findWhere($whereClause) {
+        return array();
     }
 }

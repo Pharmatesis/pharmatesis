@@ -6,7 +6,7 @@
  * @author Joan Fernández
  * @date 2017-02-23
  * @version 1.0
- * @param id: ID of the article
+ * @param id: ID of the user
         * name: User's name
         * password: User's password
         * surnames: User's surnames

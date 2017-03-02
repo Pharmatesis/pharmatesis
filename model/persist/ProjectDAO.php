@@ -2,65 +2,64 @@
 
 /** 
  * Class that will connect the object with the DB
- * @name ProfessionDAO.php
+ * @name ProjectDAO.php
  * @author Joan Fernández
  * @date 2017-02-23
  * @version 1.0
 */
-class ProfessionDAO {
+class ProjectDAO {
     
     /** 
     * Inserts the object into the DB
-    * @name insertProfession()
+    * @name insertProject()
     * @author Joan Fernández
     * @date 2017-02-23
     * @version 1.0
-    * @param $profession Object to insert
+    * @param $project Object to insert
     * @return $rowsAffected Number of rows affected
     */
-    public static function insertProfession($profession) {
+    public static function insertProject($project) {
         return 0;
     }
     
     /** 
     * Erases the object from the DB
-    * @name deleteProfession()
+    * @name deleteProject()
     * @author Joan Fernández
     * @date 2017-02-23
     * @version 1.0
-    * @param $profession Object to delete
+    * @param $project Object to delete
     * @return $rowsAffected Number of rows affected
     */
-    public static function deleteProfession($profession) {
+    public static function deleteProject($project) {
         return 0;
     }
     
     /** 
     * Modifies the object into the DB
-    * @name modifyProfession()
+    * @name modifyProject()
     * @author Joan Fernández
     * @date 2017-02-23
     * @version 1.0
-    * @param $profession Object to modify
+    * @param $project Object to modify
     * @return $rowsAffected Number of rows affected
     */
-    public static function modifyProfession($profession) {
+    public static function modifyProject($project) {
         return 0;
     }
     
     /** 
     * Finds an object into the DB
-    * @name findProfession()
+    * @name findProject()
     * @author Joan Fernández
     * @date 2017-02-23
     * @version 1.0
-    * @param $profession Object to find
-    * @return $foundProfession Founded object
+    * @param $project Object to find
+    * @return $foundProject Founded object
     */
-    public static function findProfession($profession) {
-        $foundProfession = null;
-        
-        return $foundProfession;
+    public static function findProject($project) {
+        $foundProject = null;        
+        return $foundProject;
     }
     
     /** 
@@ -69,7 +68,7 @@ class ProfessionDAO {
     * @author Joan Fernández
     * @date 2017-02-23
     * @version 1.0
-    * @param $whereClause Clause to fins
+    * @param $whereClause Clause to find
     * @return array Founded objects
     */
     public function findWhere($whereClause) {

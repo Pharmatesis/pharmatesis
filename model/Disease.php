@@ -1,18 +1,17 @@
 <?php
 
 /** 
- * Class to manage the Profession objects
- * @name Profession.php
+ * Class to manage the Medicament objects
+ * @name Medicament.php
  * @author Joan Fernández
  * @date 2017-02-23
  * @version 1.0
- * @param id: ID of the profession
-        * id: Profession's id
-        * name: Profession's name
+ * @param id: Disease's ID
+        * name: Disease's name
 */
-class Profession {
+class Disease {
     
-    //Atributtes
+    //Attributes
     private $id;
     private $name;
     
@@ -41,6 +40,7 @@ class Profession {
     
     //Own methods
     public function __toString() {
-        return sprintf("ID=%s, Name=%s", $this->id,$this->name);
+        return sprintf("ID=%s, Name=%s",
+                $this->id,$this->name);
     }
 }

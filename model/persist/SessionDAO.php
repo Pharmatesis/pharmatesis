@@ -2,65 +2,64 @@
 
 /** 
  * Class that will connect the object with the DB
- * @name ProfessionDAO.php
+ * @name SessionDAO.php
  * @author Joan Fernández
  * @date 2017-02-23
  * @version 1.0
 */
-class ProfessionDAO {
+class SessionDAO {
     
     /** 
     * Inserts the object into the DB
-    * @name insertProfession()
+    * @name insertSession()
     * @author Joan Fernández
     * @date 2017-02-23
     * @version 1.0
-    * @param $profession Object to insert
+    * @param $session Object to insert
     * @return $rowsAffected Number of rows affected
     */
-    public static function insertProfession($profession) {
+    public static function insertSession($session) {
         return 0;
     }
     
     /** 
     * Erases the object from the DB
-    * @name deleteProfession()
+    * @name deleteSession()
     * @author Joan Fernández
     * @date 2017-02-23
     * @version 1.0
-    * @param $profession Object to delete
+    * @param $session Object to delete
     * @return $rowsAffected Number of rows affected
     */
-    public static function deleteProfession($profession) {
+    public static function deleteSession($session) {
         return 0;
     }
     
     /** 
     * Modifies the object into the DB
-    * @name modifyProfession()
+    * @name modifySession()
     * @author Joan Fernández
     * @date 2017-02-23
     * @version 1.0
-    * @param $profession Object to modify
+    * @param $session Object to modify
     * @return $rowsAffected Number of rows affected
     */
-    public static function modifyProfession($profession) {
+    public static function modifySession($session) {
         return 0;
     }
     
     /** 
     * Finds an object into the DB
-    * @name findProfession()
+    * @name findSession()
     * @author Joan Fernández
     * @date 2017-02-23
     * @version 1.0
-    * @param $profession Object to find
-    * @return $foundProfession Founded object
+    * @param $session Object to find
+    * @return $foundSession Founded object
     */
-    public static function findProfession($profession) {
-        $foundProfession = null;
-        
-        return $foundProfession;
+    public static function findSession($session) {
+        $foundSession = null;        
+        return $foundSession;
     }
     
     /** 
@@ -69,7 +68,7 @@ class ProfessionDAO {
     * @author Joan Fernández
     * @date 2017-02-23
     * @version 1.0
-    * @param $whereClause Clause to fins
+    * @param $whereClause Clause to find
     * @return array Founded objects
     */
     public function findWhere($whereClause) {

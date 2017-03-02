@@ -6,14 +6,14 @@
  * @author Joan Fernández
  * @date 2017-02-23
  * @version 1.0
- * @param id: ID of the article
-        * name: User's name
-        * surnames: User's surnames
-        * email: User's email
-        * phone: User's phone number
-        * $bornDate: User's born date
-        * $specialism: User's specialism
-        * $professionId: User's profession ID (relation with Profession)
+ * @param id: ID of the dispense
+        * name: Dispense's name
+        * surnames: Dispense's surnames
+        * email: Dispense's email
+        * phone: Dispense's phone number
+        * $bornDate: Dispense's born date
+        * $specialism: Dispense's specialism
+        * $professionId: Dispense's profession ID (relation with Profession)
 */
 class Dispense {
     

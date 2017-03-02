@@ -1,25 +1,27 @@
 <?php
 
 /** 
- * Class to manage the Profession objects
- * @name Profession.php
+ * Class to manage the Session objects
+ * @name Session.php
  * @author Joan Fernández
  * @date 2017-02-23
  * @version 1.0
- * @param id: ID of the profession
-        * id: Profession's id
-        * name: Profession's name
+ * @param id: Session's ID
+        * name: Session's name
+        * date: Session's date
 */
-class Profession {
+class Session {
     
-    //Atributtes
+    //Atributte declaration
     private $id;
     private $name;
+    private $date;
     
     //Constructor
-    function __construct($id, $name) {
+    function __construct($id, $name, $date) {
         $this->id = $id;
         $this->name = $name;
+        $this->date = $date;
     }
     
     //Getters & Setters
@@ -31,6 +33,10 @@ class Profession {
         return $this->name;
     }
 
+    function getDate() {
+        return $this->date;
+    }
+
     function setId($id) {
         $this->id = $id;
     }
@@ -38,9 +44,14 @@ class Profession {
     function setName($name) {
         $this->name = $name;
     }
+
+    function setDate($date) {
+        $this->date = $date;
+    }
     
     //Own methods
     public function __toString() {
-        return sprintf("ID=%s, Name=%s", $this->id,$this->name);
+        return sprintf("ID=%s, Name=%s, Date=%s",
+                $this->id,$this->name, $this->date);
     }
 }
