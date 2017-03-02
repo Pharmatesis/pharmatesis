@@ -35,11 +35,11 @@ class MainController {
             case 'register':
                 $this->register(); //list all articles
                 break;
-            case 'articleForm':
-                $this->articleForm(); //show a form for an article
+            case 'search':
+                $this->search(); //show a form for an article
                 break;
-            case 'add':
-                $this->add();
+            case 'searchList':
+                $this->searchList();
                 break;
             case 'remove':
                 $this->removeArticle();
@@ -83,30 +83,21 @@ class MainController {
     }    
     
     /**
-     * List all articles.
-     */
-    public function listAll() {
-        $articleList = null;
-        $articleList = $this->model->searchAll();
-        include 'views/list-articles.php';
+    * Method to show professionals found in our DDBB
+    * @name login
+    * @author Jonathan Lozano
+    * @date 2017-02-23
+    * @version 1.0
+    */
+    public function search() {
+        include 'views/search-form.php';
     }
 
     /**
      * List articles by category founded.
      */
-    public function listCategory() {
-        $category = ArticleFormValidation::getCategory();
-        $articleList = false;
-        
-        if(!is_null($category)){
-            $articleList = $this->model->searchCategory($category);
-        }
-        if($articleList){
-            include 'views/list-articles.php';
-        }else{
-            $err = "Category not found";
-            include 'views/list-category-form.php';
-        }
+    public function searchList() {
+        include 'views/search-list.php';
     }
 
     /**

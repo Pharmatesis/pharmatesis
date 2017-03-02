@@ -7,7 +7,7 @@ error_reporting(E_ALL);
     <head>
         <meta charset="UTF-8">
         <title>Pharmatesis</title>
-        <link rel="stylesheet" type="text/css" href="files/reset.css">
+        <link rel="stylesheet" type="text/css" href="files/css/reset.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -19,9 +19,8 @@ error_reporting(E_ALL);
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    <h2>Pharmatesis</h2>
                     <?php
-                    require 'controller/MainController.php';
+                    require 'controller/php/MainController.php';
                     $control = new MainController();
                     $control->processRequest();
                     ?>

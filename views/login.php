@@ -1,11 +1,3 @@
-<script type="text/javascript">
-        function submitForm(buttonId){
-            var myForm = document.getElementById('login-form');
-            myForm.action.value= buttonId;
-            myForm.submit();
-            return false;
-        }
-</script>
 <div class="container">
     <div class="row">
         <div class="col-sm-2"></div>
@@ -35,3 +27,4 @@
             </form>            
         </div>
     </div>
+</div>
